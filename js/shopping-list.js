@@ -1,14 +1,14 @@
 var btn = document.getElementById('enter');
 var input = document.getElementById('userinput');
 var ul = document.querySelector('ul');
-var list = document.querySelectorAll('li');
+var li = document.querySelectorAll('li');
 var delBtn = document.querySelectorAll('li .delete');
 
 delBtn.forEach(function(e) {
   e.addEventListener('click', removeListItem);
 })
 
-list.forEach(function(e) {
+li.forEach(function(e) {
   e.addEventListener('click', toggleLi);
 })
 
@@ -20,12 +20,19 @@ function inputLength() {
   return input.value.length;
 }
 
-function removeListItem(e) {
+function removeListItem(e) { //single click deletes  element
+    var item = e.target.parentNode;
+    item.parentNode.removeChild(item);
+}
+
+/* First click gets the toggle event, then second click would get the delete event
+function removeListItem(e) { //Code would require two clicks for delete?
   this.addEventListener('click', function(e) {
     var item = e.target.parentNode;
     item.parentNode.removeChild(item);
   })
 }
+*/
 
 function createDelBtn() {
   var newDelBtn = document.createElement('button');
