@@ -36,12 +36,12 @@ function createDelBtn() {
   return newDelBtn;
 }
 
+
 function createListElement() {
     var li = document.createElement('li');
     li.addEventListener('click', toggleLi); 
-//     li.addEventListener('click', removeListItem); removed all lis when removing this new li element
     li.appendChild(document.createTextNode(input.value));
-    li.appendChild(createBtn()); 
+    li.appendChild(createDelBtn()); 
     ul.appendChild(li); 
     input.value = ''; 
 }
