@@ -11,26 +11,8 @@ body {
   margin:0;
   height:100%;
   font-family: 'Caveat', cursive;
+  background-color:#fff;
 
-}
-.coolTitle {
-  text-align: center;
-  font-family: 'Oswald', Helvetica, sans-serif;
-  font-size: 80px;
-  transform: skewY(-10deg);
-  letter-spacing: 4px;
-  word-spacing: -8px;
-  color: tomato;
-  text-shadow: 
-    -1px -1px 0 firebrick,
-    -2px -2px 0 firebrick,
-    -3px -3px 0 firebrick,
-    -4px -4px 0 firebrick,
-    -5px -5px 0 firebrick,
-    -6px -6px 0 firebrick,
-    -7px -7px 0 firebrick,
-    -8px -8px 0 firebrick,
-    -30px 20px 40px dimgrey
 }
 
 .done {
@@ -106,7 +88,6 @@ li {
   background-color: #FFEB3B;
   color: #8D6E63;
   font-weight: 700;
-  
 }
 
 #enter:active {
@@ -137,3 +118,9 @@ li {
 span {
   text-decoration: underline;
 }
+
+#hint {
+  font-size: 18px;
+  background-color:#FFEB3B;
+}
+
