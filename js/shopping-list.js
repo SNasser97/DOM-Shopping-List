@@ -27,11 +27,12 @@ function removeListItem(e) {
   })
 }
 
-function createBtn() {
+function createDelBtn() {
   var newDelBtn = document.createElement('button');
   var btnTxt = document.createTextNode('X');
   newDelBtn.setAttribute('class', 'delete');
   newDelBtn.appendChild(btnTxt);
+  newDelBtn.addEventListener('click', removeListItem);
   return newDelBtn;
 }
 
