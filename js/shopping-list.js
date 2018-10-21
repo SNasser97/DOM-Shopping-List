@@ -20,7 +20,7 @@ function inputLength() {
   return input.value.length;
 }
 
-function removeListItem(e) { //single click deletes  element
+function removeListItem(e) { 
     var item = e.target.parentNode;
     item.parentNode.removeChild(item);
 }
