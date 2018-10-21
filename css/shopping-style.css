@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat:400,700');
+
+
+@font-face {
+  font-family: 'Caveat', cursive;
+  src:url(https://fonts.googleapis.com/css?family=Caveat:400,700);
+}
+
+body {
+  padding:0;
+  margin:0;
+  height:100%;
+  font-family: 'Caveat', cursive;
+
+}
+.coolTitle {
+  text-align: center;
+  font-family: 'Oswald', Helvetica, sans-serif;
+  font-size: 80px;
+  transform: skewY(-10deg);
+  letter-spacing: 4px;
+  word-spacing: -8px;
+  color: tomato;
+  text-shadow: 
+    -1px -1px 0 firebrick,
+    -2px -2px 0 firebrick,
+    -3px -3px 0 firebrick,
+    -4px -4px 0 firebrick,
+    -5px -5px 0 firebrick,
+    -6px -6px 0 firebrick,
+    -7px -7px 0 firebrick,
+    -8px -8px 0 firebrick,
+    -30px 20px 40px dimgrey
+}
+
+.done {
+  text-decoration: line-through;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: italic;
+  color:green;
+}
+h1, #first {font-weight: 700; color:#FFEB3B; font-size:36px;}
+
+ul {padding:0; background-color: #FFEB3B;}
+
+li {
+  cursor:pointer; 
+  font-size: 24px; 
+  list-style:none;
+  text-align: left;
+  border-bottom: 1px solid #8D6E63;
+  padding: 10px 0px 2px 20px;
+}
+
+.head-container {
+  margin:50px auto;
+  text-align: center;
+  width:450px;
+  border:1px solid #E4E4E4;
+  border-radius: 10px;
+}
+
+#userinput {
+  height:30px;
+  width: 50%;
+  font-size: 1.5em;
+  padding: 10px;
+  outline:none;
+  border:1px solid #FFEB3B;
+  border-radius: 100px;
+  font-family: inherit;
+  margin-left: 50px;
+  background-color: #8D6E63;
+  color: #FFEB3B;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: inherit;
+    opacity: 0.5; /* Firefox */
+}
+
+
+#userinput:active, #userinput:focus {
+  border:1px solid #FFEB3B;
+}
+#first {
+  font-weight: 300;
+  font-size: 24px;
+}
+
+/* ENTER BTN */
+#enter {
+  height:52px;
+  width: 82px;
+  padding:15px;
+  border-radius: 50px;
+  position: relative;
+  right: 58px;
+  bottom:4px;
+  outline:none;
+  border:none;
+  font:inherit;
+  text-align: center;
+  background-color: #FFEB3B;
+  color: #8D6E63;
+  font-weight: 700;
+  
+}
+
+#enter:active {
+  border:1px solid #FFEB3B;
+  box-shadow:0px 3px #302b2a;
+   transform: translateY(3px);
+}
+
+.head-container {
+  background-color: #8D6E63;
+}
+
+.delete {
+  position: relative;
+  left: 10px;
+  border-radius: 40px;
+  border:1px solid #8D6E63;
+  background-color:#8D6E63;
+  color:#FFEB3B;
+  outline:none;
+  cursor: pointer;
+}
+
+.delete:active {
+  transform:scale(1.4);
+}
+
+span {
+  text-decoration: underline;
+}
