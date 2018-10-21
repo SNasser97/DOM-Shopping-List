@@ -38,7 +38,7 @@ function createBtn() {
 function createListElement() {
     var li = document.createElement('li');
     li.addEventListener('click', toggleLi); 
-    li.addEventListener('click', removeListItem);
+//     li.addEventListener('click', removeListItem); removed all lis when removing this new li element
     li.appendChild(document.createTextNode(input.value));
     li.appendChild(createBtn()); 
     ul.appendChild(li); 
