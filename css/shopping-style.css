@@ -34,6 +34,9 @@ li {
   text-align: left;
   border-bottom: 1px solid #8D6E63;
   padding: 10px 0px 2px 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
 .head-container {
@@ -109,6 +112,16 @@ li {
   color:#FFEB3B;
   outline:none;
   cursor: pointer;
+  display: flex;
+  margin-left: auto;
+  position: absolute;
+  left: 25rem;
+  height: 1.5rem;
+  width: 2rem;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
 }
 
 .delete:active {
